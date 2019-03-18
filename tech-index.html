@@ -4,42 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Technomart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet"> -->
 </head>
 
 <body>
     <header class="main-header">
-        <section class="top-header">
-            <a href="#">
-                Техномарт
-                <span class="logo-underline"></span>
-            </a>
-            <input type="text" class="search-field" name="search" placeholder="Поиск">
-            <ul class="score">
-                <li class="score-item"><a href="">Закладки</a></li>
-                <li class="score-item"><a href="">Корзина</a></li>
-                <li class="score-item"><a href="">Оформить заказ</a></li>
-            </ul>
-        </section>
-        <section class="header-information">
-            <p>Интернет-магазин строительный материалов и инструментов для ремонта</p>
-            <div class="header-contacts">
-                <span>+7(812)555-05-55</span>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
+        <div class="header-wrap">
+            <div class="top-header-wrap">
+                <div class="container">
+                    <section class="top-header">
+                        <a href="#" class="main-logo">
+                            Техномарт
+                            <span class="logo-underline"></span>
+                        </a>
+                        <div class="search-field-wrap">
+                            <input type="text" class="search-field" name="search" placeholder="Поиск:">
+                        </div>
+                        <ul class="score">
+                            <li class="score-item"><a href="" class="bookmarks">Закладки: 0</a></li>
+                            <li class="score-item"><a href="" class="basket">Корзина: 0</a></li>
+                        </ul>
+                        <ul class="checkout">
+                            <li class="checkout-item"><a href="#">Оформить заказ</a></li>
+                        </ul>
+                    </section>
+                </div>
             </div>
-            <button type="button" class="user-login">Войти</button>
-            <button type="button" class="user-registration">Регистрация</button>
-        </section>
-        <nav class="main-nav">
-            <ul class="site-nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
+            <div class="container">
+                <section class="header-information">
+                    <p>Интернет-магазин строительный материалов и инструментов для ремонта</p>
+                    <div class="header-contacts">
+                        <span>+7(812)555-05-55</span>
+                        <p>г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
+                    </div>
+                    <button type="button" class="user-login">Войти</button>
+                    <button type="button" class="user-registration">Регистрация</button>
+                </section>
+                <nav class="main-nav">
+                    <ul class="site-nav">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Спецпредложения</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <main class="container">
         <section class="products">
@@ -77,12 +91,12 @@
                     <a href="#">Открыть каталог</a>
                 </li>
                 <li>
-                        <div>
-                            <h2>Перфораторы</h2>
-                            <p>Настоящие мужские игрушки</p>
-                        </div>
-                        <a href="#">Открыть каталог</a>
-                    </li>
+                    <div>
+                        <h2>Перфораторы</h2>
+                        <p>Настоящие мужские игрушки</p>
+                    </div>
+                    <a href="#">Открыть каталог</a>
+                </li>
             </ul>
         </section>
         <section class="popular popular-product">
@@ -246,7 +260,7 @@
             <a href="#">Заблудились? Напишите нам!</a>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <section class="footer-nav">
             <article class="footer-contact">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>

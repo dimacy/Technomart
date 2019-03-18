@@ -1,0 +1,235 @@
+@font-face{
+    font-family: 'Cuprum italic';
+    src: url('./fonts/web/cuprumitalic.woff') format('woff'),
+        url('./fonts/web/cuprumitalic.woff2') format('woff2');
+    font-family: 'Cuprum';
+    src: url('./fonts/web/cuprum.woff') format('woff'),
+        url('./fonts/web/cuprum.woff2') format('woff2');
+    font-family: 'PT Sans';
+    src: url('./fonts/web/ptsans.woff') format('woff'),
+        url('./fonts/web/ptsans.woff2') format('woff2');
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    color: #000000; 
+
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 940px;
+
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header-wrap{
+    width: 100%;
+
+    background-color: #f4f7f9;
+}
+.top-header-wrap{
+    width: 100%;
+
+    background-color: #293449;
+}
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-logo{
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 24px;
+    line-height: 42px;
+
+    display: block;
+
+    padding-left: 55px;
+    padding-right: 55px;
+
+    color: #ffffff;
+    background-color: #ee3643;
+
+    position: relative;
+}
+.main-logo:hover,
+.main-logo:focus{
+    background-color: #ca2c37;
+}
+.logo-underline{
+    background-color: #b52933;
+
+    width: 100%;
+    height: 5px;
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.search-field{
+    width: 270px;
+    height: 100%;
+
+    padding-left: 49px;
+    padding-right: 10px;
+
+    border: none;
+    box-sizing: border-box;
+
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 17px;
+
+    background-color: transparent;
+}
+.search-field-wrap{
+    position: relative;
+
+    line-height: 42px;
+}
+.search-field-wrap:hover{
+    background-color: #212a3a;
+}
+.search-field-wrap::before{
+    content: "";
+
+    width: 17px;
+    height: 17px;
+
+    position: absolute;
+    top: 12px;
+    left: 17px;
+
+    background-image: url('../img/icon-search-hover.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+}
+.search-field-wrap:hover::before{
+    opacity: 1;
+}
+.search-field-wrap:focus-within{
+    background-color: #ffffff;
+}
+.search-field-wrap:focus-within::before{
+    background-image: url('../img/icon-search-red.png');
+    opacity: 1;
+}
+.search-field::placeholder{
+    color: #ffffff;
+}
+.score{
+    display: flex;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+.score-item a{
+    color: #ffffff;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 42px;
+
+    display: block;
+
+    margin: 0;
+    padding-right: 28px; 
+    padding-left: 44px;
+
+    position: relative;
+}
+.score-item a:hover,
+.score-item a:focus{
+    background-color: #212a3a;
+}
+.bookmarks::before{
+    content: "";
+
+    width: 14px;
+    height: 16px;
+
+    background-image: url('../img/icon-bookmark.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+
+    position: absolute;
+    top: 12px;
+    left: 17px;
+}
+.bookmarks:active{
+    color: #a2a5a9;
+    background-color: #161d29;
+}
+.bookmarks:hover::before{
+    opacity: 1;
+}
+.bookmarks:active::before{
+    opacity: 0.3;
+}
+.basket::before{
+    content: "";
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url('../img/icon-cart.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+.basket:active{
+    color: #a2a5a9;
+    background-color: #161d29;
+}
+.basket:hover::before{
+    opacity: 1;
+}
+.basket:active::before{
+    opacity: 0.3;
+}
+.checkout{
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkout-item{
+    list-style: none;
+}
+.checkout-item a{
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 42px;
+    color: #ffffff;
+
+    display: block;
+
+    background-color: #63a63e;
+
+    padding-right: 20px; 
+    padding-left: 22px;
+}
+.checkout-item a:hover{
+    background-color: #5fbb2d;
+}
+.checkout-item a:active{
+    background-color: #518534;
+    color: #b7c9af;
+}
